@@ -6,7 +6,6 @@ import {m} from 'framer-motion';
 import {Typography} from '@mui/material';
 
 import {MotionContainer, varBounce} from '../animate';
-
 import {PageNotFoundIllustration} from '../../assets/illustrations';
 
 ErrorBoundary.propTypes = {

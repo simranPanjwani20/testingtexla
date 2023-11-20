@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {useNavigate} from 'react-router-dom';
+// import {useNavigate} from 'react-router-dom';
 import {Box, Breadcrumbs, IconButton, Link, Stack, Typography} from '@mui/material';
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LinkItem from './LinkItem';
@@ -27,7 +27,7 @@ export default function CustomBreadcrumbs({
                                               ...other
                                           }) {
     const lastLink = !!links.length && links[links.length - 1].name;
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     return (
         <Box sx={{mb: 5, ...sx}}>
@@ -35,7 +35,7 @@ export default function CustomBreadcrumbs({
                 <Box sx={{flexGrow: 1}}>
                     <Stack direction="row" justifyContent="flex-start" alignItems="center">
                         {backButton && (
-                            <IconButton onClick={() => backHandler ? backHandler() : navigate(-1)} sx={{mt: -0.6, mr: 2}}>
+                            <IconButton onClick={() => backHandler ? backHandler() : ''} sx={{mt: -0.6, mr: 2}}>
                                 <ArrowBackIcon/>
                             </IconButton>
                         )}
